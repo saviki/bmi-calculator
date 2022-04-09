@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Mukta:wght@200&display=swap"
+        rel="stylesheet">
+
+    <script>
+
+        function bmi() {
+            let weight = document.getElementById("weight").value;
+            let height = document.getElementById("height").value;
+
+            return (weight / (height * height));
+        }
+
+        function display() {
+            document.getElementById("label").value = bmi();
+        }
+    </script>
+</head>
+
+<body>
+    <!-- title -->
+    <h2 class="title">BMI Calculator</h2>
+    <br><br>
+
+    <!-- form input -->
+    <form onsubmit="display()" method="get">
+        <div class="container">
+            <input type="text" name="weight" id="weight" placeholder="Enter your Weight (kg)">
+            <br>
+            <input type="text" name="height" id="height" placeholder="Enter your Height (m)">
+            <br>
+            <input type="submit" name="bmi" value="BMI">
+        </div>
+    </form>
+
+
+    <!-- form display -->
+    <form method="get">
+        <div class="container">
+            <input type="text" name="label" id="label">
+        </div>
+    </form>
+
+
+    <!-- table -->
+    <br>
+    <table>
+        <tr class="row">
+            <td>under weight</td>
+            <td>- 18.5</td>
+        </tr>
+        <tr class="row">
+            <td>normal weight</td>
+            <td>18.5 - 24.9</td>
+        </tr>
+        <tr class="row">
+            <td>over weight</td>
+            <td>25 - 29.9</td>
+        </tr>
+        <tr class="row">
+            <td>obesity</td>
+            <td>30 -</td>
+        </tr>
+    </table>
+
+
+    <!-- article holder -->
+    <div class="article-holder">
+        <h3>HOW TO KEEP GOOD BMI</h3>
+        <ol>
+            <li>
+                <a href="https://www.hioscar.com/blog/how-to-maintain-a-healthy-body-mass-index-bmi#:~:text=How%20to%20maintain%20a%20healthy%20BMI,balanced%20diet%20are%20equally%20important."
+                    target="blank">
+                    <h4>How to maintain a healthy Body Mass<h4>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/index.htm" target="blank">
+                    <h4>Maintain a healthy weight<h4>
+                </a>
+            </li>
+            <li>
+                <a href="https://kidshealth.org/en/teens/weight-tips.html" target="blank">
+                    <h4>Five ways to reach a healthy weight<h4>
+                </a>
+            </li>
+            <li>
+                <a href="http://stopcancerfund.org/pz-diet-habits-behaviors/eating-habits-that-improve-health-and-lower-body-mass-index/"
+                    target="blank">
+                    <h4>Eating Habits that Improve Health<h4>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.livi.co.uk/your-health/5-simple-tips-for-a-healthy-bmi/" target="blank">
+                    <h4>Five simple tips for healthy BMI<h4>
+                </a>
+            </li>
+        </ol>
+    </div>
+</body>
+
+
+<footer>
+    <div class="social-tab">
+        <span>
+            <a href="https://www.facebook.com/" target="blank"><img class="social" src="https://w7.pngwing.com/pngs/895/882/png-transparent-computer-icons-logo-facebook-facebook-blue-logo-electric-blue.png"></a>
+            <a href="https://www.youtube.com/" target="blank"><img class="social" src="https://w7.pngwing.com/pngs/946/596/png-transparent-youtube-logo-computer-icons-order-now-button-angle-text-triangle.png"></a>
+            <a href="https://www.instagram.com/" target="blank"><img class="social" src="https://img.favpng.com/9/25/24/computer-icons-instagram-logo-sticker-png-favpng-LZmXr3KPyVbr8LkxNML458QV3.jpg"></a>
+            <a href="https://twitter.com/?lang=en" target="blank"><img class="social" src="https://e1.pngegg.com/pngimages/589/288/png-clipart-clay-os-6-a-macos-icon-twitter-tweeter-icon-thumbnail.png"></a>
+            <a href="https://telegram.org/" target="blank"><img class="social" src="https://p7.hiclipart.com/preview/968/321/102/telegram-computer-icons-apple-icon-image-format-telegram-icon-enkel-iconset-froyoshark.jpg"></a>
+        </span>
+    </div>
+    <h5>Copyright 2020-2022 by Savin. All Rights Reserved.</h5>
+</footer>
+
+</html>

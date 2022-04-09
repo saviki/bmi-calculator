@@ -1,0 +1,156 @@
+* {
+    color: aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Mukta', sans-serif;
+}
+
+body {
+    background: linear-gradient(#33cccc, #ffaa80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li {
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+@keyframes first {
+    from {color: #000000;}
+    to {color: #f2f2f2;}
+}
+
+h2.title{
+    text-align: center;
+    font-size: 4em;
+    animation-name: first;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 2em;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+td {
+    font-size: 2em;
+    padding: 15px;
+}
+
+table {
+    width: 20%;
+    margin: 10px auto;
+}
+
+form {
+    background-color: #184787;
+    padding: 20px;
+    width: 30%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+input {
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.article {
+    width: 40%;
+    padding: 10px;
+    background-color: #184787;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.row {
+    background: linear-gradient(to right, #184787, #406CA8);
+}
+
+img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    width: 90%;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: black;
+}
+
+input[type="submit"] {
+    width: 40%;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #3466A9;
+    font-size: 1.5em;
+}
+
+input[type="submit"]:hover {
+    background-color: #0F305D;
+}
+
+.container {
+    text-align: center;
+}
+
+.article-holder{
+    background-color: #184787;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 20px;
+    width: 40%;
+    height: auto;
+}
+
+.social {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.social-tab{
+    margin: 0px auto;
+    text-align: center;
+}
